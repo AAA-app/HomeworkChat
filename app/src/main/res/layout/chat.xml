@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/silgle_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="room Name "
+            android:padding="10dp"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/silgle_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="user Name"
+            android:padding="10dp"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/silgle_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="messageBody"
+            android:padding="10dp"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+
+</LinearLayout>
