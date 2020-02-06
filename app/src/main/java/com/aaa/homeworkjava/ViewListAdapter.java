@@ -15,11 +15,7 @@ public class ViewListAdapter extends BaseAdapter {
     String userList[];
     LayoutInflater inflter;
 
-
-
-
     public ViewListAdapter(Context applicationContext, String[] userList) {
-
         this.userList = userList;
         inflter = (LayoutInflater.from(applicationContext));
     }
@@ -40,10 +36,10 @@ public class ViewListAdapter extends BaseAdapter {
     }
 
     public View getView(int position, View view, ViewGroup parent) {
-        view = inflter.inflate(R.layout.chat, null);
-        TextView roomName = (TextView) view.findViewById(R.id.silgle_tv1);
-        TextView userName = (TextView) view.findViewById(R.id.silgle_tv2);
-        TextView messageBody = (TextView) view.findViewById(R.id.silgle_tv3);
+        view = inflter.inflate(R.layout.list_single, null);
+        TextView roomName = view.findViewById(R.id.silgle_tv1);
+        TextView userName = view.findViewById(R.id.silgle_tv2);
+        TextView messageBody = view.findViewById(R.id.silgle_tv3);
         roomName.setText(userList[position]);
         userName.setText(userList[position]);
         messageBody.setText(userList[position]);

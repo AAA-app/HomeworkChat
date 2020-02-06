@@ -1,24 +1,29 @@
 package com.aaa.homeworkjava;
 
-import android.app.Activity;
-import android.content.Context;
+
 import android.os.Bundle;
 import android.widget.ListView;
-import android.widget.TextView;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 
 public class ChatActivity extends AppCompatActivity {
+    public  static FirebaseDatabase dataBase;
+    public  static DatabaseReference ref;
 
     ListView simpleList;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_single);
+        dataBase = FirebaseDatabase.getInstance();
+        ref = dataBase.getReference();
+        setContentView(R.layout.chat);
+
+
 
         String userList[] = {"", "", "", "", "", ""};
 

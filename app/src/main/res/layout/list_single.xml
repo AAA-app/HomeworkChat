@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#B21E6E8F"
-    android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
 
-    <ListView
-        android:id="@+id/simpleListView"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:dividerHeight="1dp"
-        android:footerDividersEnabled="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/edit_text_chat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#fff"
-        android:hint="send message"
-        android:padding="10dp"
-        android:textSize="23dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+<TextView
+    android:id="@+id/silgle_tv1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="room Name "
+    android:padding="10dp"
+    android:textSize="25dp"
+    android:textStyle="bold" />
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+<TextView
+    android:id="@+id/silgle_tv2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="user Name"
+    android:padding="10dp"
+    android:textSize="25dp"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/silgle_tv3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="messageBody"
+    android:padding="10dp"
+    android:textSize="25dp"
+    android:textStyle="bold" />
+</LinearLayout>
